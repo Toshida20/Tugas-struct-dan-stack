@@ -28,5 +28,15 @@ void Pop(stack *S, stok *x){
     else{
         --(S->count);
         *x = S->Buah[S->count];
+        
+    }
+}
+
+void Push(stok x, stack *S){
+    if (Full(S))
+        cout << "Stack full! Gagal mengirim data" << endl;
+    else{
+        S->Buah[S->count] = x;
+        ++(S->count);
     }
 }
