@@ -17,3 +17,16 @@ void initializeStack(stack *S){
 int Full(stack *S){
     return (S->count == MAXSTACK);
 }
+
+int Empty(stack *S){
+    return (S->count == 0);
+}
+
+void Pop(stack *S, stok *x){
+    if (Empty(S))
+        cout << "Stack kosong!" << endl;
+    else{
+        --(S->count);
+        *x = S->Buah[S->count];
+    }
+}
