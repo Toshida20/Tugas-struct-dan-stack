@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 //C030324062_STACK
+
 const int MAXSTACK = 15;
 typedef int stok;
 
@@ -11,4 +12,8 @@ typedef struct{
 
 void initializeStack(stack *S){
     S->count = 0;
+}
+
+int Full(stack *S){
+    return (S->count == MAXSTACK);
 }
