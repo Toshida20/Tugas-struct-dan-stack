@@ -24,21 +24,22 @@ void input(Mahasiswa *kelas) {
     bersih();
     cout << "===== MASUKAN DATA MAHASISWA =====\n" << endl;
 
-    cout << "Masukkan NIM       : ";
+    cout << "Masukkan NIM\t: ";
     cin >> kelas->nim;
     cin.ignore();
 
-    cout << "Masukkan Nama      : ";
+    cout << "Masukkan Nama\t: ";
     getline(cin, kelas->nama);
 
-    cout << "Masukkan Alamat    : ";
+    cout << "Masukkan Alamat\t: ";
     getline(cin, kelas->alamat);
 
-    cout << "Masukkan IPK       : ";
+    cout << "Masukkan IPK\t: ";
     cin >> kelas->ipk;
 
-    cout << "\nTekan enter untuk melanjutkan...";
-    getch();
+    cout << "\nTekan [E] untuk melanjutkan...";
+        while (getch() != 'e');
+        return;
 }
 
 void output(Mahasiswa *data) {
