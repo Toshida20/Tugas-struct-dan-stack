@@ -3,7 +3,11 @@
 #include <string>
 using namespace std;
 
-// C030324062_STRUCT
+//C030324062_STRUCT
+//git branch -M main
+//git push -u origin main
+//git add C030324062_STRUCT.cpp
+//git commit -m "BLA BLA BLA"
 
 struct Mahasiswa {
     string nim;
